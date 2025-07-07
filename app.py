@@ -6,6 +6,12 @@ model = joblib.load('models/spam_classifier.pkl')
 vectorizer = joblib.load('models/vectorizer.pkl')
 
 # Streamlit app
+st.set_page_config(
+    page_title="Spamy", 
+    page_icon="🚀",                      
+    layout="centered",                   
+    initial_sidebar_state="auto",        
+)
 st.title("📧 Spam Message Detector")
 st.markdown("Enter a message and find out if it's **Spam or Ham**.")
 
